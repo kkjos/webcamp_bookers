@@ -1,4 +1,6 @@
-
+<% if flash[:notice] %>
+  <p><%= flash[:notice] %></p>
+<% end %>
 
 <p>title</p>
 <span><%= @book.title %></span>

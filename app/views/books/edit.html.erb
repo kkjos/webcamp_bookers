@@ -15,11 +15,12 @@
 <%= f.text_field :title %>
 
 <h2>body</h2>
-<%= f.text_field :body %>
+<%= f.text_area:body %>
 
 <%= f.submit 'Update Book' %>
 
 <% end %>
 
-<%= link_to "destroy", book_path(@book), method: :delete %>
+<%= link_to "destroy", book_path(@book), method: :delete, data: {confirm:'Are You Sure?'} %>
+ |
 <%= link_to "back", books_path %>

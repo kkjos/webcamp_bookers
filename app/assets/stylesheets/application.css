@@ -34,3 +34,8 @@ td{
 .headline{display: flex;
   margin: 40px;
 }
+
+.error{border: 1px solid red;
+  width: 60%;
+}
+h3{color: red;}
